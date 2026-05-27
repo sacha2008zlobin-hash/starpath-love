@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>29.05.2025 · Начало нашей любви</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="dialog-29-05-2025.css">
+</head>
+<body>
+    
+    <!-- ЧАТ TELEGRAM -->
+    <div id="chat-screen" class="fullscreen-overlay">
+        <div class="chat-container">
+            
+            <!-- Шапка Telegram -->
+            <div class="chat-header">
+                <div class="header-back">←</div>
+                <div class="header-avatar">
+                    <img src="../photo/avatartg.jpg" alt="Сашка">
+                </div>
+                <div class="header-info">
+                    <div class="header-name">Сашка💕</div>
+                    <div class="header-status">был недавно</div>
+                </div>
+            </div>
+            
+            <!-- Индикатор печатает -->
+            <div class="typing-indicator hidden" id="typing-indicator">
+                <div class="typing-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <span class="typing-text">печатает...</span>
+            </div>
+            
+            <!-- Сообщения -->
+            <div class="chat-messages" id="chat-messages"></div>
+            
+            <!-- Варианты ответов -->
+            <div class="chat-choices" id="chat-choices"></div>
+            
+        </div>
+    </div>
+    
+    <script src="dialog-29-05-2025.js"></script>
+</body>
+</html>
