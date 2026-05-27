@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>11.05.2025 · Первое знакомство</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="dialog-11-05-2025.css">
+</head>
+<body>
+    
+    <!-- ЗАГРУЗКА -->
+    <div id="loading-screen" class="fullscreen-overlay">
+        <div class="loading-content">
+            <div class="vk-logo">ДВ</div>
+            <div class="loading-text">Загрузка...</div>
+        </div>
+    </div>
+    
+    <!-- АНКЕТА -->
+    <div id="profile-screen" class="fullscreen-overlay hidden">
+        <div class="profile-card">
+            <div class="profile-photo">
+                <img src="../photo/my-photo.jpg" alt="Фото">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">Александр Злобин</div>
+                <div class="profile-status">онлайн</div>
+            </div>
+            <div class="profile-actions">
+                <button class="action-btn dislike-btn" id="dislike-btn">👎</button>
+                <button class="action-btn like-btn" id="like-btn">❤️</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ПРОФИЛЬ -->
+    <div id="my-profile-screen" class="fullscreen-overlay hidden">
+        <div class="vk-profile">
+            <div class="profile-header">
+                <div class="back-btn" id="back-from-profile">← Назад</div>
+            </div>
+            <div class="profile-main-photo">
+                <img src="../photo/my-photo.jpg" alt="Фото">
+            </div>
+            <div class="profile-details">
+                <div class="detail-name">Александр Злобин</div>
+                <div class="detail-status">● онлайн</div>
+            </div>
+            <button class="message-btn" id="add-friend-btn">✉ Добавить в друзья</button>
+        </div>
+    </div>
+    
+    <!-- ПЕРЕХОД -->
+    <div id="transition-screen" class="fullscreen-overlay hidden">
+        <div class="transition-content">
+            <div class="clock-anim">🕐</div>
+            <div class="transition-text">Прошло несколько часов...</div>
+        </div>
+    </div>
+    
+    <!-- СУДЬБА -->
+    <div id="fate-screen" class="fullscreen-overlay hidden">
+        <div class="fate-content">
+            <div class="fate-icon">✨</div>
+            <div class="fate-text">Судьбу изменить нельзя</div>
+            <button class="fate-btn" id="retry-btn">Попробовать снова</button>
+        </div>
+    </div>
+    
+    <!-- ЧАТ -->
+    <div id="chat-screen" class="fullscreen-overlay hidden">
+        <div class="chat-container">
+            
+            <div class="chat-header">
+                <div class="header-avatar">
+                    <img src="../photo/my-photo.jpg" alt="">
+                </div>
+                <div class="header-info">
+                    <div class="header-name">Александр Злобин</div>
+                    <div class="header-status">онлайн</div>
+                </div>
+            </div>
+            
+            <!-- Индикатор печатает -->
+            <div class="typing-indicator hidden" id="typing-indicator">
+                <div class="typing-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <span class="typing-text">печатает...</span>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages"></div>
+            
+            <div class="chat-choices" id="chat-choices"></div>
+            
+        </div>
+    </div>
+    
+    <script src="dialog-11-05-2025.js"></script>
+</body>
+</html>
