@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>15.11.2025 · Первая встреча</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="dialog-15-11-2025.css">
+</head>
+<body>
+    
+    <div id="app-container">
+        
+        <!-- Чат -->
+        <div id="chat-screen" class="fullscreen-overlay">
+            <div class="chat-container">
+                
+                <!-- Шапка -->
+                <div class="chat-header">
+                    <div class="header-back" id="header-back">←</div>
+                    <div class="header-avatar" id="header-avatar">
+                        <img src="../photo/lybov.jpg" alt="" id="header-avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-fallback" style="display:none;">❤️</div>
+                    </div>
+                    <div class="header-info">
+                        <div class="header-name" id="header-name">Любимая❤️❤️❤️</div>
+                        <div class="header-status" id="header-status">была недавно</div>
+                    </div>
+                </div>
+                
+                <!-- Индикатор печатает -->
+                <div class="typing-indicator hidden" id="typing-indicator">
+                    <div class="typing-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="typing-text">печатает...</span>
+                </div>
+                
+                <!-- Сообщения -->
+                <div class="chat-messages" id="chat-messages"></div>
+                
+                <!-- Варианты ответов -->
+                <div class="chat-choices" id="chat-choices"></div>
+                
+            </div>
+        </div>
+        
+        <!-- Вкладки чатов -->
+        <div class="chat-tabs" id="chat-tabs">
+            <div class="tab active" data-chat="loved" id="tab-loved">
+                <div class="tab-avatar">
+                    <img src="../photo/lybov.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="tab-avatar-fallback" style="display:none;">❤️</div>
+                </div>
+                <div class="tab-label">Любимая</div>
+            </div>
+            <div class="tab locked" data-chat="alina" id="tab-alina">
+                <div class="tab-avatar">
+                    <img src="../photo/alina.jpg" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="tab-avatar-fallback" style="display:none;">А</div>
+                </div>
+                <div class="tab-label">Алина</div>
+                <div class="tab-lock">🔒</div>
+            </div>
+            <div class="tab locked" data-chat="azamat" id="tab-azamat">
+                <div class="tab-avatar azamat-avatar">А</div>
+                <div class="tab-label">Азамат</div>
+                <div class="tab-lock">🔒</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="dialog-15-11-2025.js"></script>
+</body>
+</html>
